@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document
+xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CstmrCdtTrfInitn>
+<GrpHdr>
+<MsgId>2020090915274993d3ef</MsgId>
+<CreDtTm>2020-09-09T15:27:49</CreDtTm>
+<NbOfTxs>1</NbOfTxs>
+<InitgPty>
+<Nm>Uzņēmums SIA</Nm>
+<PstlAdr>
+<AdrLine>Skanstes iela 13, Rīga, LV-1046</AdrLine>
+</PstlAdr>
+</InitgPty>
+</GrpHdr>
+<PmtInf>
+<PmtInfId>2020090915274993d3ef-0-0</PmtInfId>
+<PmtMtd>TRF</PmtMtd>
+<BtchBookg>false</BtchBookg>
+<ReqdExctnDt>
+<Dt>2020-09-09</Dt>
+</ReqdExctnDt>
+<Dbtr>
+<Nm>Uzņēmums SIA</Nm>
+<PstlAdr>
+<AdrLine>Skanstes iela 13, Rīga, LV-1046</AdrLine>
+</PstlAdr>
+<Id>
+<OrgId><LEI>12345678901234567800</LEI></OrgId>
+</Id>
+</Dbtr>
+<DbtrAcct>
+<Id>
+<IBAN>LV71RIKO0000080823980</IBAN>
+</Id>
+</DbtrAcct>
+<DbtrAgt>
+<FinInstnId>
+<BICFI>RIKOLV2X</BICFI>
+</FinInstnId>
+</DbtrAgt>
+<CdtTrfTxInf>
+<PmtId>
+<InstrId>201</InstrId>
+<EndToEndId>000072362881</EndToEndId>
+</PmtId>
+<Amt>
+<InstdAmt Ccy="EUR">18021.0</InstdAmt>
+</Amt>
+<ChrgBr>SHAR</ChrgBr>
+<CdtrAgt>
+<FinInstnId>
+<BICFI>CBVILT2X</BICFI>
+<Nm>AB SEB bankas</Nm>
+<PstlAdr>
+<Ctry>LT</Ctry>
+<AdrLine>GEDIMINO AVE. 12, 01103 VILNIUS</AdrLine>
+</PstlAdr>
+</FinInstnId>
+</CdtrAgt>
+<Cdtr>
+<Nm>Valstybine mokesčiu inspekcija prie LR FM</Nm>
+<PstlAdr>
+<Ctry>LT</Ctry>
+<AdrLine>Street number 13, Vilnius</AdrLine>
+</PstlAdr>
+</Cdtr>
+<CdtrAcct>
+<Id>
+<IBAN>LT057044060007887175</IBAN>
+</Id>
+</CdtrAcct>
+<RgltryRptg>
+<Authrty>
+<Ctry>LV</Ctry>
+</Authrty>
+<Dtls>
+<Tp>AMK</Tp>
+<Cd>251</Cd>
+</Dtls>
+</RgltryRptg>
+<RmtInf>
+<Ustrd>Avansis pelno mokestis už III KV 2020m</Ustrd>
+<Strd>
+<CdtrRefInf>
+<Tp>
+<CdOrPrtry>
+<Cd>SCOR</Cd>
+</CdOrPrtry>
+</Tp>
+<Ref>1001</Ref>
+</CdtrRefInf>
+</Strd>
+</RmtInf>
+</CdtTrfTxInf>
+</PmtInf>
+</CstmrCdtTrfInitn>
+</Document>

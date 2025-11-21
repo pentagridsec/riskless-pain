@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Document
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09 pain.001.001.09.xsd">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>20221102094224</MsgId>
+			<CreDtTm>2022-11-02T09:42:24</CreDtTm>
+			<NbOfTxs>9</NbOfTxs>
+			<CtrlSum>282823.92</CtrlSum>
+			<InitgPty>
+				<Nm>PaDuTe Comarch AG DE-28359 Bremen</Nm>
+				<PstlAdr>
+					<StrtNm>Anne-Conway-Str. 29999</StrtNm>
+					<PstCd>28359</PstCd>
+					<TwnNm>Bremen</TwnNm>
+					<Ctry>DE</Ctry>
+				</PstlAdr>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>00000000000000000000000000000000001</PmtInfId>
+			<PmtMtd>CHK</PmtMtd>
+			<NbOfTxs>3</NbOfTxs>
+			<CtrlSum>122230</CtrlSum>
+			<ReqdExctnDt>
+				<Dt>2022-11-02</Dt>
+			</ReqdExctnDt>
+			<Dbtr>
+				<Nm>PaDuTe Comarch AG Name2 Name3</Nm>
+				<PstlAdr>
+					<StrtNm>Anne-Conway-Str. 29999</StrtNm>
+					<PstCd>28359</PstCd>
+					<TwnNm>Bremen</TwnNm>
+					<Ctry>DE</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>DE00XXXXXXXXXX</IBAN>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>XXXXXXXXXXX</BICFI>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgsAcct>
+				<Id>
+					<IBAN>BA42XXXXXXXXXX</IBAN>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</ChrgsAcct>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>20220000000329</InstrId>
+					<EndToEndId>20220000000329</EndToEndId>
+				</PmtId>
+				<PmtTpInf>
+					<SvcLvl>
+						<Cd>NURG</Cd>
+					</SvcLvl>
+					<CtgyPurp>
+						<Cd>ZABA</Cd>
+					</CtgyPurp>
+				</PmtTpInf>
+				<Amt>
+					<InstdAmt Ccy="PLN">66640</InstdAmt>
+				</Amt>
+				<ChrgBr>SHAR</ChrgBr>
+				<ChqInstr>
+					<ChqTp>CCHQ</ChqTp>
+					<DlvryMtd>
+						<Cd>PUDB</Cd>
+					</DlvryMtd>
+				</ChqInstr>
+				<Cdtr>
+					<Nm>Xxxxxxx Xxxxxxx</Nm>
+					<PstlAdr>
+						<StrtNm>Eurocentrum Office Complex Al. Jerozolimskie 134</StrtNm>
+						<PstCd>02-305</PstCd>
+						<TwnNm>Warszawa</TwnNm>
+						<Ctry>PL</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<InstrForCdtrAgt>
+					<Cd>CHQB</Cd>
+					<InstrInf>voluptua At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren no sea takimata sanctus est Lorem ipsum dolor</InstrInf>
+				</InstrForCdtrAgt>
+				<InstrForCdtrAgt>
+					<Cd>TELB</Cd>
+					<InstrInf>dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam volupt</InstrInf>
+				</InstrForCdtrAgt>
+				<InstrForDbtrAgt>Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed</InstrForDbtrAgt>
+				<Purp>
+					<Cd>CORT</Cd>
+				</Purp>
+				<RmtInf>
+					<Ustrd>exTRE-2021022466</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

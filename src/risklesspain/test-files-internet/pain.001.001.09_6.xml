@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document
+	xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09
+pain.001.001.09.xsd">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>MSGID000001</MsgId>
+			<CreDtTm>2023-04-03T10:30:00</CreDtTm>
+			<NbOfTxs>2</NbOfTxs>
+			<CtrlSum>3000.03</CtrlSum>
+			<InitgPty>
+				<Nm>Group Finance</Nm>
+				<PstlAdr>
+					<StrtNm>Aleksanterinkatu</StrtNm>
+					<BldgNb>123</BldgNb>
+					<PstCd>00100</PstCd>
+					<TwnNm>HELSINKI</TwnNm>
+					<Ctry>FI</Ctry>
+				</PstlAdr>
+				<Id>
+					<OrgId>
+						<!--
+Position of LEI in the schema, if in use
+<LEI>888888IFQI8W88M8IY88</LEI>
+-->
+						<Othr>
+							<Id>1234567890</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<!--
+*********************************************************
+Payment with a message
+*********************************************************
+-->
+		<PmtInf>
+			<PmtInfId>20230403-12345678912</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>
+				<Dt>2023-04-03</Dt>
+			</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Debtor Company Plc</Nm>
+				<PstlAdr>
+					<StrtNm>Aleksanterinkatu</StrtNm>
+					<BldgNb>123</BldgNb>
+					<PstCd>00100</PstCd>
+					<TwnNm>HELSINKI</TwnNm>
+					<Ctry>FI</Ctry>
+				</PstlAdr>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>0987654321</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FI8529501800020574</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>BANKFIHH</BICFI>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>InstrId000001</InstrId>
+					<EndToEndId>EndToEndId000001</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">1000.01</InstdAmt>
+				</Amt>
+				<ChrgBr>SLEV</ChrgBr>
+				<CdtrAgt>
+					<FinInstnId>
+						<BICFI>DEUTATWW</BICFI>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Creditor Company</Nm>
+					<PstlAdr>
+						<StrtNm>Hohenstaufengasse</StrtNm>
+						<BldgNb>123</BldgNb>
+						<PstCd>1010</PstCd>
+						<TwnNm>Wien</TwnNm>
+						<Ctry>AT</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>AT123456789012345678</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Invoices 123 and 321</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<!--
+*********************************************************
+Instant payment with creditor reference
+*********************************************************
+-->
+		<PmtInf>
+			<PmtInfId>20230403-12345678914</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+				<LclInstrm>
+					<Cd>INST</Cd>
+				</LclInstrm>
+			</PmtTpInf>
+			<ReqdExctnDt>
+				<Dt>2023-04-03</Dt>
+			</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Debtor Company Plc</Nm>
+				<PstlAdr>
+					<StrtNm>Aleksanterinkatu</StrtNm>
+					<BldgNb>123</BldgNb>
+					<PstCd>00100</PstCd>
+					<TwnNm>HELSINKI</TwnNm>
+					<Ctry>FI</Ctry>
+				</PstlAdr>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>0987654321</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FI8529501800020574</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>BANKFIHH</BICFI>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>InstrId000002</InstrId>
+					<EndToEndId>EndToEndId000002</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">2000.02</InstdAmt>
+				</Amt>
+				<ChrgBr>SLEV</ChrgBr>
+				<CdtrAgt>
+					<FinInstnId>
+						<BICFI>BANKFIHH</BICFI>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>SAAJA TOIMITTAJA OY</Nm>
+					<PstlAdr>
+						<StrtNm>KOTIKATU</StrtNm>
+						<BldgNb>321</BldgNb>
+						<PstCd>00100</PstCd>
+						<TwnNm>HELSINKI</TwnNm>
+						<Ctry>FI</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FI1029501800020566</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Strd>
+						<CdtrRefInf>
+							<Tp>
+								<CdOrPrtry>
+									<Cd>SCOR</Cd>
+								</CdOrPrtry>
+								<Issr>ISO</Issr>
+							</Tp>
+							<Ref>RF47892182916</Ref>
+						</CdtrRefInf>
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools >= 61.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "risklesspain"
+version = "1.0.0"
+
+license = {file = "LICENSE.txt"}
+keywords = ["pain001", "payments", "payment initiation message", "Pain.001.001.09"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Tobias Ospelt", email = "tobias@pentagrid.ch"},
+]
+maintainers = [
+  {name = "Tobias Ospelt", email = "tobias@pentagrid.ch"},
+]
+description = "Do your salary payments and risking a little less to send Millions to a cyber criminal."
+
+dependencies = [
+  "setuptools",
+  "PyQt6",
+  "lxml",
+  "xmldiff"
+]
+
+[project.scripts]
+risklesspain = "risklesspain.main:main_gui"

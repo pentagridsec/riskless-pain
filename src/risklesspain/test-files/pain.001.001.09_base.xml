@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09 pain.001.001.09.ch.03.xsd">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>MSG-2025-05-21T13:44:43</MsgId>
+			<CreDtTm>2025-05-21T13:44:43</CreDtTm>
+			<NbOfTxs>3</NbOfTxs>
+			<CtrlSum>3000.0</CtrlSum>
+			<InitgPty>
+				<Nm>Example AG</Nm>
+				<CtctDtls>
+					<Othr>
+						<ChanlTp>NAME</ChanlTp>
+						<Id>Infoniqa ONE Start </Id>
+					</Othr>
+					<Othr>
+						<ChanlTp>VRSN</ChanlTp>
+						<Id>V-2025.00)</Id>
+					</Othr>
+					<Othr>
+						<ChanlTp>PRVD</ChanlTp>
+						<Id>Infoniqa Schweiz AG</Id>
+					</Othr>
+					<Othr>
+						<ChanlTp>SPSV</ChanlTp>
+						<Id>2.0</Id>
+					</Othr>
+				</CtctDtls>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>PMTINF-2025-05-21T13:44:43-1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<PmtTpInf>
+				<CtgyPurp>
+					<Cd>SALA</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>
+				<Dt>2025-05-26</Dt>
+			</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Example AG</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>CH9999999910378969399</IBAN>
+				</Id>
+				<Tp>
+					<Prtry>CND</Prtry>
+				</Tp>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<ClrSysMmbId>
+						<ClrSysId>
+							<Cd>CHBCC</Cd>
+						</ClrSysId>
+						<MmbId>774</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>287</InstrId>
+					<EndToEndId>007280549DE24CF6B0BA1EA31B2C12FF</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="CHF">1000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BICFI>VPBVLI2XXXX</BICFI>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Foo Person Name</Nm>
+					<PstlAdr>
+						<StrtNm>Foo 13</StrtNm>
+						<PstCd>7000</PstCd>
+						<TwnNm>Chur</TwnNm>
+						<Ctry>CH</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>LI7008805599999999999</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf/>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>286</InstrId>
+					<EndToEndId>F4369F443270402AAA565F7B241E2E2B</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="CHF">1000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BICFI>KBSGCH22XXX</BICFI>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Bar Person Name</Nm>
+					<PstlAdr>
+						<StrtNm>Bar 31</StrtNm>
+						<PstCd>8400</PstCd>
+						<TwnNm>Winterthur</TwnNm>
+						<Ctry>CH</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>CH5800999999999999999</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf/>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>285</InstrId>
+					<EndToEndId>B0AAF4B43807488B8C4055F602776718</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="CHF">1000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BICFI>POFICHBEXXX</BICFI>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Baz Person Name</Nm>
+					<PstlAdr>
+						<StrtNm>Baz 13</StrtNm>
+						<PstCd>9490</PstCd>
+						<TwnNm>Vaduz</TwnNm>
+						<Ctry>LI</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>CH2909099999999999999</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf/>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

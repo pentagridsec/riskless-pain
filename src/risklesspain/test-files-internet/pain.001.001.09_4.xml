@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document
+xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CstmrCdtTrfInitn>
+<GrpHdr>
+<MsgId>S7_E2E_T7_ABA_04</MsgId>
+<CreDtTm>2020-09-10T17:30:00</CreDtTm>
+<NbOfTxs>1</NbOfTxs>
+<CtrlSum>1008.15</CtrlSum>
+<InitgPty>
+<Nm>Corporation UAB</Nm>
+</InitgPty>
+</GrpHdr>
+<PmtInf>
+<PmtInfId>E2E004d17h30m9002</PmtInfId>
+<PmtMtd>TRF</PmtMtd>
+<BtchBookg>false</BtchBookg>
+<ReqdExctnDt>
+<Dt>2020-09-10</Dt>
+</ReqdExctnDt>
+<Dbtr>
+<Nm>Corporation UAB</Nm>
+<PstlAdr>
+<Ctry>LT</Ctry>
+<AdrLine>Konstitucijos ave. 21A, 03601 Vilnius</AdrLine>
+</PstlAdr>
+</Dbtr>
+<DbtrAcct>
+<Id>
+<IBAN>LT594010049500047594</IBAN>
+</Id>
+</DbtrAcct>
+<DbtrAgt>
+<FinInstnId>
+<BICFI>AGBLLT2X</BICFI>
+</FinInstnId>
+</DbtrAgt>
+<CdtTrfTxInf>
+<PmtId>
+<InstrId>S7_E2E_T7_ABA_04</InstrId>
+<EndToEndId>S7_E2E_T7_ABA_04</EndToEndId>
+</PmtId>
+<PmtTpInf>
+<SvcLvl>
+<Cd>SDVA</Cd>
+</SvcLvl>
+</PmtTpInf>
+<Amt>
+<InstdAmt Ccy="USD">1008.15</InstdAmt>
+</Amt>
+<ChrgBr>DEBT</ChrgBr>
+<CdtrAgt>
+<FinInstnId>
+<ClrSysMmbId>
+<ClrSysId>
+<Cd>USABA</Cd>
+</ClrSysId>
+<MmbId>021000089</MmbId>
+</ClrSysMmbId>
+<Nm>CitiBank</Nm>
+<PstlAdr>
+<Ctry>US</Ctry>
+<AdrLine> 9 WALL STREET</AdrLine>
+<AdrLine>NEW YORK</AdrLine>
+</PstlAdr>
+</FinInstnId>
+</CdtrAgt>
+<CdtrAgtAcct>
+<Id>
+<Othr>
+<Id>30111810700000000063</Id>
+</Othr>
+</Id>
+</CdtrAgtAcct>
+<Cdtr>
+<Nm>ALEX FERGUSON</Nm>
+<PstlAdr>
+<Ctry>US</Ctry>
+<AdrLine>Street number 13, New York</AdrLine>
+</PstlAdr>
+</Cdtr>
+<CdtrAcct>
+<Id>
+<Othr>
+<Id>2978420020000000</Id>
+<SchmeNm>
+<Cd>BBAN</Cd>
+</SchmeNm>
+</Othr>
+</Id>
+</CdtrAcct>
+<RmtInf>
+<Ustrd>Payment for Invoice Nr. 2020-09-10/123</Ustrd>
+</RmtInf>
+</CdtTrfTxInf>
+</PmtInf>
+</CstmrCdtTrfInitn>
+</Document>

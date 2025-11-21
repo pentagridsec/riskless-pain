@@ -1,0 +1,6 @@
+include src/risklesspain/spec/*.xsd
+include src/risklesspain/test-files/*.xml
+include src/risklesspain/test-files-internet/*.xml
+include src/risklesspain/ui/*.ui
+include src/risklesspain/ui/*.svg
+
