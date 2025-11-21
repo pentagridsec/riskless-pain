@@ -23,7 +23,7 @@ For Linux users it is simpler to just run it with your local Python installation
 Running with your local Python
 ==============================
 
-In order to install the software into a virtual Python environpent, just run:
+In order to install the software into a virtual Python environment, just run:
 
 ::
 
